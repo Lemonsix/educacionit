@@ -5,6 +5,7 @@
 
 body {
     border-top: #FCEE21 3px;
+
 }
 
 .wwwapas {
@@ -12,35 +13,51 @@ body {
     font-size: 42pt;
 }
 
+h2>span{
+    background-color: #FCEE21; 
+    font-weight: 700;
+}
+
 .main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
     border-top: 8px solid #FCEE21;
-    max-width: 2508;
     box-sizing: border-box;
     background-color: #F2F2F2;
-    margin: auto;
+}
+
+img {
+    object-fit: contain;
 }
 
 .big-wwwapas {
     font-size: 88pt;
+   
 }
-header{
+
+header {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-nav{
+nav {
     width: 40vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-nav>ul{
+
+nav>ul {
     width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
-    list-style: none ;
+    list-style: none;
 }
 
 nav>ul>li>a {
@@ -49,32 +66,75 @@ nav>ul>li>a {
     text-decoration: none;
 }
 
+
+
 .redes {
     display: flex;
     justify-content: space-around;
     font-size: 25pt;
     color: #808080;
 }
-#servicios{
+
+#servicios {
     font-size: 41pt;
 }
-.servicios{
+
+.servicios {
     display: flex;
-padding:100px;
+    padding: 100px;
     border-top: 2px solid #626262;
     border-bottom: 2px solid #626262;
 }
-.servicios-text{
-    margin-left:80px;
+
+.servicios-text {
+    margin-left: 80px;
 }
-.servicios>div>ol{
-    padding:0px;
+
+.servicios>div>ol {
+    padding: 0px;
 }
-.servicios>div>ol>li{
+
+.servicios>div>ol>li {
     font-size: 24pt;
     margin: 50px;
 }
+
+
 footer {
     font-size: 33pt;
     background-color: #FCEE21;
 }
+.collage{
+    display: flex;
+    justify-content:space-around;
+    
+
+}
+.collage>img{
+    box-sizing: border-box;
+    max-width: 50%;
+}
+
+ol{
+    font-size: 2em;
+    font-weight:400;
+    list-style-position:inside;
+}
+
+.first-block, .second-block{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-around;
+    width: 100%;
+}
+.first-block>div{
+    width: 50%;
+}
+
+
+.yellow-li {
+    font-weight: bold;
+    background-color: #FCEE21;
+}
+
