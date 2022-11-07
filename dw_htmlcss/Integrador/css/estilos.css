@@ -1,7 +1,80 @@
-*{
-
-font-family: 'Roboto', sans-serif;
+* {
+    font-size: 21pt;
+    font-family: 'Roboto', sans-serif;
 }
-.wwwapas{
+
+body {
+    border-top: #FCEE21 3px;
+}
+
+.wwwapas {
     font-family: 'Coiny', cursive;
+    font-size: 42pt;
+}
+
+.main {
+    border-top: 8px solid #FCEE21;
+    max-width: 2508;
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+    margin: auto;
+}
+
+.big-wwwapas {
+    font-size: 88pt;
+}
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav{
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav>ul{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none ;
+}
+
+nav>ul>li>a {
+    font-size: 24pt;
+    color: #626262;
+    text-decoration: none;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25pt;
+    color: #808080;
+}
+#servicios{
+    font-size: 41pt;
+}
+.servicios{
+    display: flex;
+padding:100px;
+    border-top: 2px solid #626262;
+    border-bottom: 2px solid #626262;
+}
+.servicios-text{
+    margin-left:80px;
+}
+.servicios>div>ol{
+    padding:0px;
+}
+.servicios>div>ol>li{
+    font-size: 24pt;
+    margin: 50px;
+}
+footer {
+    font-size: 33pt;
+    background-color: #FCEE21;
 }
