@@ -5,7 +5,8 @@
 
 body {
     border-top: #FCEE21 3px;
-
+    max-width: 1900px;
+    margin: auto;
 }
 
 .wwwapas {
@@ -107,8 +108,6 @@ footer {
 .collage{
     display: flex;
     justify-content:space-around;
-    
-
 }
 .collage>img{
     box-sizing: border-box;
@@ -128,13 +127,18 @@ ol{
     justify-content: space-around;
     width: 100%;
 }
-.first-block>div{
-    width: 50%;
-}
-
 
 .yellow-li {
     font-weight: bold;
     background-color: #FCEE21;
 }
+
+#contacto{
+    display: flex;
+    justify-content: space-between;
+}
+label, input{
+    display: block;
+}
+
 
