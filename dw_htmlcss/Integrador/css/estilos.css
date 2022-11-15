@@ -141,4 +141,6 @@ label, input{
     display: block;
 }
 
-
+.req_red{
+    color: red;
+}
