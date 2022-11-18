@@ -126,15 +126,19 @@
           <p>Envianos tu consulta >></p>
         </div>
         <div class="form">
-          <form action="codigo.php" method="post">
-            <label>Nombre<a class="req_red">*</a></label>
-            <input type="text" placeholder="Juan Hernandez" required />
-            <label>Email principal y de referencia<a class="req_red">*</a></label>
-            <input type="email" placeholder="info@mimail.com" required />
-            <label>Mensaje<a class="req_red">*</a></label>
-            <textarea required></textarea>
-            <button>Enviar consulta</button>
-            <input type="reset" value="Borrar" />
+          <form class="form-fields"   action="codigo.php" method="post">
+            <label class="form-field-title">Nombre<a class="req_red">*</a></label>
+            <input class="form-fields" type="text" name="nombre" placeholder="Juan Hernandez" required />
+            <label class="form-field-title">Email principal y de referencia<a class="req_red">*</a></label>
+            <input class="form-fields" type="email" name="email" placeholder="info@mimail.com" required />
+            <label class="form-field-title">Mensaje<a class="req_red">*</a></label>
+            <textarea name="comentarios" class="form-fields" required></textarea>
+            <br>
+            <div class="form-buttons-div">
+              <button class="form-button">Enviar consulta</button>
+              <input class="form-button" type="reset" value="Borrar" />
+            </div>
+            
           </form>
         </div>
       </section>
