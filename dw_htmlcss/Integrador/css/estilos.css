@@ -101,9 +101,22 @@ nav>ul>li>a {
 }
 
 
-footer {
+footer{
     font-size: 33pt;
     background-color: #FCEE21;
+    padding-left:50px;
+    text-decoration: none;
+}
+a:link{
+    text-decoration: none;
+    color:black;
+}
+a:visited{
+    text-decoration: none;
+    color: gray;
+}
+a:hover{
+    font-weight: 700;
 }
 .collage{
     display: flex;
@@ -136,6 +149,8 @@ ol{
 #contacto{
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 label, input{
     display: block;
@@ -143,4 +158,33 @@ label, input{
 
 .req_red{
     color: red;
+}
+.form-fields{
+    width: 100%;
+    box-sizing: border-box;
+}
+.form-buttons-div{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.form-button{
+    background-color: black;
+    color: white;
+    width: 50%;
+    margin: 1%;
+    box-sizing: border-box;
+    height: 50px;
+    font-size: 17px;
+}
+.form-button:hover{
+    border-color: #fff;
+    background-color:#313131;
+}
+.form-field-title{
+    font-weight: 700;
+}
+.redes{
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
