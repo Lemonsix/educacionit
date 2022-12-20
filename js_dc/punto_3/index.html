@@ -14,40 +14,42 @@
   <body>
     <div id="container">
       <div id="sidepanel">
-        <form>
+        <form name="form" id="formId">
+
           <label for="energia">Tipo de Energía:</label>
           <select class="form-select" id="energia" name="energia">
-            <option value="eolica">Eólica</option>
-            <option value="hidroelectrica">Hidroeléctrica</option>
-            <option value="solar">Solar</option>
+            <option value="Eólica">Eólica</option>
+            <option value="Hidroeléctrica">Hidroeléctrica</option>
+            <option value="Solar">Solar</option>
           </select>
+
           <label for="descripcion">Descripción: </label>
           <input class="form-control"type="text" id="descripcion" name="descripcion">
 
           <label for="energiaGenerada">Energía Generada: </label>
           <div class="input-group mb-3">
-            <input type="text" class="form-control">
+            <input name="energiaGenerada" id="energiaGenerada"type="number" class="form-control" min="0">
             <span class="input-group-text">kWh</span>
           </div>
 
           <label for="presupuesto">Presupuesto: </label>
           <div class="input-group mb-3">
             <span class="input-group-text">$</span>
-            <input type="text" class="form-control">
+            <input name="presupuesto" id="presupuesto" type="number" class="form-control" min="0">
           </div>
 
           <label for="tiempo">Tiempo de Obra: </label>
           <div class="input-group mb-3">
-            <input type="text" class="form-control">    
+            <input id="tiempo" type="number" class="form-control" min="0">    
             <span class="input-group-text">meses</span>
           </div>
           <div>
-          <button class="btn btn-primary">Submit</button>
+          <input type="submit" class="btn btn-primary"></input>
         </div>
         </form>
       </div>
       <div id="dashboard">
-        <table class="table">
+        <table class="table" id="table">
             <thead>
           <tr>
             <th scope="col"><a>Tipo de Energía</a></th>
@@ -55,6 +57,7 @@
             <th scope="col"><a>Energía Generada (kWh)</a></th>
             <th scope="col"><a>Presupuesto (USD)</a></th>
             <th scope="col"><a>Tiempo estimado (meses)</a></th>
+            <th scope="col"><a>Efectividad (%)</a></th>
           </tr>
         </thead>
         <tbody>
