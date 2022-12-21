@@ -24,7 +24,7 @@
           </select>
 
           <label for="descripcion">Descripción: </label>
-          <input class="form-control"type="text" id="descripcion" name="descripcion">
+          <textarea class="form-control"type="text" id="descripcion" name="descripcion"></textarea> 
 
           <label for="energiaGenerada">Energía Generada: </label>
           <div class="input-group mb-3">
@@ -44,7 +44,7 @@
             <span class="input-group-text">meses</span>
           </div>
           <div>
-          <input type="submit" class="btn btn-primary"></input>
+          <button type="button" id="myBtn" class="btn btn-primary">Submit</button>
         </div>
         </form>
       </div>
@@ -60,11 +60,15 @@
             <th scope="col"><a>Efectividad (%)</a></th>
           </tr>
         </thead>
-        <tbody>
-
+        <tbody id="tableBody">
         </tbody>
         </table>
-      </div>
+        <section id="energySection">
+
+        </section>
+        <section id="effectivitySection">
+
+        </section>
     </div>
     <script src="js/script.js"></script>
   </body>
