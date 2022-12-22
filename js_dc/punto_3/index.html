@@ -24,7 +24,7 @@
           </select>
 
           <label for="descripcion">Descripción: </label>
-          <textarea class="form-control"type="text" id="descripcion" name="descripcion"></textarea> 
+          <textarea rows="8"placeholder="Inserte una breve descripción aqui..."class="form-control"type="text" id="descripcion" name="descripcion"></textarea> 
 
           <label for="energiaGenerada">Energía Generada: </label>
           <div class="input-group mb-3">
@@ -64,10 +64,18 @@
         </tbody>
         </table>
         <section id="energySection">
-
+          <div>
+            <span>Tipo de energía: Eólica</span><span id="eolicaAvg"></span>
+          </div>
+          <div>
+            <span>Tipo de energía: Hidroeléctrica</span><span id="hidroelectricaAvg"></span>
+          </div>
+          <div>
+            <span>Tipo de energía: Solar</span><span id="solarAvg"></span>
+          </div>
         </section>
         <section id="effectivitySection">
-
+          <!-- esto se carga con template literals desde el js-->
         </section>
     </div>
     <script src="js/script.js"></script>
